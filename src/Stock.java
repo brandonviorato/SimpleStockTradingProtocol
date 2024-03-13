@@ -57,6 +57,7 @@ public class Stock {
     public double viewPrice() {
         return price;
     }
+
     /**
      Gets the symbol of the stock.
      @return the stock symbol
@@ -65,6 +66,11 @@ public class Stock {
         return symbol;
     }
 
+    /**
+     Gets the information about a stock in the following format:
+     symbol current price: $price
+     @return stock info
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

@@ -26,6 +26,7 @@ public class BrokerageService implements Runnable
         brokerage = aBrokerage;
     }
 
+    // establishes a connection between the server and client
     public void run()
     {
         try
@@ -68,7 +69,7 @@ public class BrokerageService implements Runnable
      */
     public void executeCommand(String command)
     {
-         // set this for each case
+
         if (command.equals("DEPOSIT"))
         {
             int account = in.nextInt();

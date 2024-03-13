@@ -17,6 +17,7 @@ public class BrokerageServer
         ServerSocket server = new ServerSocket(SBAP_PORT);
         System.out.println("Waiting for clients to connect...");
 
+        // maintain the server running while clients connect
         while (true)
         {
             Socket s = server.accept();
